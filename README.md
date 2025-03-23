@@ -48,4 +48,4 @@ The application features an online store where users can buy fitness equipment a
 
 ## LIVE
 
-https://app.netlify.com/sites/mellifluous-hamster-442c98/overview
+(https://mellifluous-hamster-442c98.netlify.app/)
