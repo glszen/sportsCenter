@@ -1,0 +1,27 @@
+#bmi-progress {
+    width: 0%; 
+    height: 30px;
+    transition: width 1s ease-in-out; 
+    border-radius: 30px;
+  }
+  
+  .bmi-underweight {
+    background-color: #b3edff; /* Underweight color */
+  }
+  
+  .bmi-normal {
+    background-color: #66cc66; /* Normal weight color */
+  }
+  
+  .bmi-overweight {
+    background-color: #ffcc00; /* Overweight color */
+  }
+  
+  .bmi-obese {
+    background-color: #ff6666; /* Obese color */
+  }
+  
+  .bmi-extremelyobese {
+    background-color: #990000; /* Extremely obese color */
+  }
+  
