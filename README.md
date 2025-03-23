@@ -2,6 +2,10 @@
 
 This is a modern and responsive **Sports Center Web Application** designed to provide fitness-related services, including BMI calculation, class schedules, trainer details, and an online store for fitness equipment.
 
+## LIVE
+
+https://mellifluous-hamster-442c98.netlify.app/
+
 ## 🚀 Features
 
 - **BMI Calculator** 🏋️‍♂️  
@@ -48,4 +52,4 @@ The application features an online store where users can buy fitness equipment a
 
 ## LIVE
 
-(https://mellifluous-hamster-442c98.netlify.app/)
+https://mellifluous-hamster-442c98.netlify.app/
