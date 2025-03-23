@@ -46,8 +46,6 @@ The application features an online store where users can buy fitness equipment a
 - Font: **Poppins**  
 - Image assets and icons  
 
-## 📂 Installation & Setup
+## LIVE
 
-1. Clone the repository:  
-   ```sh
-   git clone https://github.com/your-repo/sports-center.git
+https://app.netlify.com/sites/mellifluous-hamster-442c98/overview
