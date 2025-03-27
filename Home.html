@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="progress.css">
   <link rel="stylesheet" href="figure.css">
   <link rel="stylesheet" href="product.css">
-  <link rel="stylesheet" href="command.css">
+  <link rel="stylesheet" href="review.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-  rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="icon" type="image/x-icon" href="./images/logo.png">
 </head>
@@ -86,20 +85,18 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-12 col-10">
-            <p class="hometext2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos tenetur nisi error ea
-              quia voluptate officiis, explicabo dignissimos! Vero dolor a, rerum quam veritatis sint tenetur eligendi
-              dignissimos fugit minima recusandae ipsum.</p>
+        <div class="row pb-3" >
+          <div class="col-lg-9 col-10 text-start" style="background-color: black; opacity: 0.8;" >
+            <p class="hometext2 pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam corrupti iure, hic quia inventore nemo error dicta amet labore excepturi consequatur dolore fuga tempore at sint atque debitis vero nesciunt obcaecati distinctio laudantium repellat adipisci et asperiores. Tempora rerum, minima minus.</p>
           </div>
         </div>
 
         <div class="row pb-5">
-          <div class="col-xl-3 pb-2">
+          <div class="col-xl-5">
             <button type="button" class="btn text-center buttontext"
-              style="background-color: #355592; max-width: 10vh;">Sign Up</button>
+              style="background-color: #355592; max-width: 14vh;">Sign Up</button>
             <button type="button" class="btn text-center border buttontext"
-              style="background-color: transparent; max-width: 9vh;">Details</button>
+              style="background-color: transparent; max-width: 12vh;">Details</button>
           </div>
 
         </div>
@@ -156,10 +153,10 @@
 
       <div id="myDIV" class="col-xl-12 col-12">
         <div class="row justify-content-center pt-3">
-          <button class="button active col-4 col-xl-1" onclick="setActive(this)" id="yoga">Yoga</button>
-          <button class="button col-4 col-xl-1" onclick="setActive(this)" id="group">Group</button>
-          <button class="button col-4 col-xl-1" onclick="setActive(this)" id="solo">Solo</button>
-          <button class="button col-4 col-xl-1" onclick="setActive(this)" id="stretching">Stretching</button>
+          <button class="button active col-4 col-xl-1" onclick="setActive(this)" id="yoga" style="font-weight: 500;">Yoga</button>
+          <button class="button col-4 col-xl-1" onclick="setActive(this)" id="group" style="font-weight: 500;">Group</button>
+          <button class="button col-4 col-xl-1" onclick="setActive(this)" id="solo" style="font-weight: 500;">Solo</button>
+          <button class="button col-4 col-xl-1" onclick="setActive(this)" id="stretching" style="font-weight: 500;">Stretching</button>
         </div>
 
 
@@ -227,46 +224,53 @@
         </h6>
       </div>
 
-      <div class="container grid gap-5 pb-5">
-        <div class="box">
-          <div class="imgBx">
-            <img src="./images/trainer1.jpg" class="figure-img img-fluid rounded" alt="...">
-          </div>
-          <div class="content">
-            <div>
-              <h2>Stacy Shane</h2>
-              <p>Pilates Constructor
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <div class="imgBx">
-            <img src="./images/trainer2.jpg" class="figure-img img-fluid rounded" alt="...">
-          </div>
-          <div class="content">
-            <div>
-              <h2>Jack Pollen</h2>
-              <p>Fitness Trainer
-              </p>
-            </div>
+      <div class="row pb-5 grid gap-5 justify-content-center pt-5">
+        <div class="trainercontainer col-4">
+          <div class="top-border"></div> <!-- Üst Kenarlık -->
+          <div class="bottom-border"></div> <!-- Alt Kenarlık -->
+          <div class="left-border"></div> <!-- Sol Kenarlık -->
+          <div class="right-border"></div> <!-- Sağ Kenarlık -->
+          
+          <img src="./images/trainer1.jpg" alt="Avatar" class="image border border-warning" style="border-radius: 5px;">
+          
+          <div class="overlay pt-1">
+            <p class="mt-3" style="font-size: 20px;">Nichols Strow<br> <a style="text-decoration: none; font-size: 14px;">Pilates Trainer</a> </p>         
           </div>
         </div>
-        <div class="box">
-          <div class="imgBx">
-            <img src="./images/trainer3.jpg" class="figure-img img-fluid rounded" alt="...">
-          </div>
-          <div class="content">
-            <div>
-              <h2>Jane Doe</h2>
-              <p>Cardio Trainer
-              </p>
-            </div>
+
+        <div class="trainercontainer col-4">
+          <div class="top-border"></div> <!-- Üst Kenarlık -->
+          <div class="bottom-border"></div> <!-- Alt Kenarlık -->
+          <div class="left-border"></div> <!-- Sol Kenarlık -->
+          <div class="right-border"></div> <!-- Sağ Kenarlık -->
+          
+          <img src="./images/trainer2.jpg" alt="Avatar" class="image border border-warning" style="border-radius: 5px;">
+          
+          <div class="overlay pt-1">
+            <p class="mt-3" style="font-size: 20px;">Nick Blake<br> <a style="text-decoration: none; font-size: 14px;">Fitness Trainer</a> </p>         
           </div>
         </div>
+
+        <div class="trainercontainer col-4">
+          <div class="top-border"></div> <!-- Üst Kenarlık -->
+          <div class="bottom-border"></div> <!-- Alt Kenarlık -->
+          <div class="left-border"></div> <!-- Sol Kenarlık -->
+          <div class="right-border"></div> <!-- Sağ Kenarlık -->
+          
+          <img src="./images/trainer3.jpg" alt="Avatar" class="image border border-warning" style="border-radius: 5px;">
+          
+          <div class="overlay pt-1">
+            <p class="mt-3" style="font-size: 20px;">Jane Done <br> <a style="text-decoration: none; font-size: 14px;">Cardio Trainer</a> </p>         
+          </div>
+        </div>
+     
+
+      
       </div>
     </div>
   </div>
+
+  
 
   <div class="row justify-content-center pt-5">
     <div class="col-lg-8 col-12 justify-content-center">
@@ -368,15 +372,15 @@
         </h6>
       </div>
 
-      <div class=" row justify-content-center pt-5 ps-3">
+      <div class=" row justify-content-center pt-5 ps-5">
         <div class="col-12 col-lg-6 pb-4">
           <div class="text-start row ps-1">
-            <div class="col-2 col-lg-3 pb-3">
+            <div class="col-2 col-lg-2 pb-3">
               <img class="clientimg" src="./images/client1.jpg">
             </div>
-            <div class="col">
-              <span style="font-weight: bold;" class="clienttext row">Diet Expert</span>
-              <span style="font-weight: bolder;" class="clienttext row pt-1">CFO</span>
+            <div class="col pt-2">
+              <span style="font-weight: 600;" class="clienttext row">Diet Expert</span>
+              <span style="font-weight: 400;" class="clienttext row pt-1">CFO</span>
             </div>
           </div>
 
@@ -384,17 +388,26 @@
             <p class="cardtext" style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
               quos minus exercitationem aliquid earum eaque, ex fugiat praesentium similique temporibus vero ratione
               dolor cupiditate omnis.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-10">
+            <div class="triangle"></div>
+            </div>
+            <div class="col justify-content-center d-flex">
+              <div class="triangle2 ms-3"></div>
+            </div>
           </div>
         </div>
 
-        <div class="col-12 col-lg-6">
+
+        <div class="col-12 col-lg-6 mb-5">
           <div class="text-start row ">
-            <div class="col-2 col-lg-3 pb-3">
+            <div class="col-2 col-lg-2 pb-3">
               <img class="clientimg" src="./images/client2.jpg">
             </div>
-            <div class="col-2">
-              <span style="font-weight: bold;" class="clienttext row">Cardio Trainer</span>
-              <span style="font-weight: bolder;" class="clienttext row pt-1">CEO</span>
+            <div class="col-3 pt-2">
+              <span style="font-weight: 600;" class="clienttext row">Cardio Trainer</span>
+              <span style="font-weight: 400;" class="clienttext row pt-1">CEO</span>
             </div>
           </div>
           <div class="card">
@@ -402,6 +415,16 @@
               quos minus exercitationem aliquid earum eaque, ex fugiat praesentium similique temporibus vero ratione
               dolor cupiditate omnis.</p>
           </div>
+          <div class="row">
+            <div class="col-lg-8 col-10">
+            <div class="triangle"></div>
+            </div>
+            <div class="col justify-content-center d-flex">
+              <div class="triangle2 ms-3"></div>
+            </div>
+          </div>
+          
+          
         </div>
       </div>
     </div>
@@ -467,12 +490,15 @@
     </div>
   </div>
 
-  <div class="footer">
-    <div class="container justify-content-start d-flex">
+  <div class="footer row justify-content-center">
+    <div class="col-8">
       <img src="./images/logo.png" style="width: 30vw; max-width: 180px; min-width: 100px;">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima eius illo maiores aliquam nisi exercitationem
-        iste facilis. Provident mollitia ducimus est, autem alias dolore laudantium, incidunt nulla, ab quia rem.</p>
+      <div class="row">
+        <p class="col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima eius illo maiores aliquam nisi exercitationem
+          iste facilis. Provident mollitia ducimus est, autem alias dolore laudantium, incidunt nulla, provident mollitia ducimus est, autem alias dolore laudantium, incidunt nab quia rem.</p>
+      </div>
+      
       <div class="justify-content-center d-flex container">
         <div class="row" style="width: 85vh;">
           <div class="col-6">

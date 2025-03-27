@@ -1,99 +1,96 @@
-  .container {
-    position: relative;
-    width: 1160px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    transform-style: preserve-3d;
-    perspective: 500px;
-    margin: auto;
-  }
-  .container .box {
-    position: relative;
-    width: 300px;
-    height: 350px;
-    transition: 0.5s;
-    transform-style: preserve-3d;
-    overflow: hidden;
-    margin-right: 15px;
-    margin-top: 45px;
-    border: orange;
-    border-style:solid;
-    border-radius: 10px;
-  }
-  .container:hover .box {
-    transform: rotateY(25deg);
-  }
-  .container .box:hover ~ .box {
-    transform: rotateY(-25deg);
-  }
-  .container .box:hover {
-    transform: rotateY(0deg) scale(1.25);
-    z-index: 1;
-    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
-  }
-  .container .box .imgBx {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .container .box .imgBx:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg,rgb(233, 127, 56),#000);
-    z-index: 1;
-    opacity: 0;
-    transition: 0.5s;
-    mix-blend-mode: multiply;
-  }
-  .container .box:hover .imgBx:before {
-    opacity: 1;
-  }
-  .container .box .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .container .box .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    padding: 20px;
-    align-items: flex-end;
-    box-sizing: border-box;
-  }
-  .container .box .content h2 {
-    color: #fff;
-    transition: 0.5s;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    font-size: 20px;
-    transform: translateY(200px);
-    transition-delay: 0.3s;
-  }
-  .container .box:hover .content h2 {
-    transform: translateY(0px);
-  }
-  .container .box .content p {
-    color: #fff;
-    transition: 0.5s;
-    font-size: 14px;
-    transform: translateY(200px);
-    transition-delay: 0.4s;
-  }
-  .container .box:hover .content p {
-    transform: translateY(0px);
-  }
+.trainercontainer {
+  position: relative; /* Kenarlıkların doğru şekilde konumlanabilmesi için */
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px;
+  transition: all 0.3s ease; /* Geçiş animasyonları */
+}
+
+/* Üst Kenar */
+.trainercontainer .top-border {
+  content: '';
+  position: absolute;
+  top: 1%;
+  left: 54%;
+  width: 30%;
+  height: 8px;
+  background-color: #355592;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+/* Alt Kenar */
+.trainercontainer .bottom-border {
+  content: '';
+  position: absolute;
+  bottom: 1%;
+  left: 54%;
+  width: 30%;
+  height: 8px;
+  background-color: #355592;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+/* Sol Kenar */
+.trainercontainer .left-border {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  width: 8px;
+  height: 40%;
+  background-color: #355592;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+/* Sağ Kenar */
+.trainercontainer .right-border {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: flex;
+  right:-2vh;
+  width: 8px;
+  height: 40%;
+  background-color: #355592;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+/* Hover ile kenarlıkların genişlemesi */
+.trainercontainer:hover .bottom-border {
+  width: 80%; /* Sadece alt çizgi için geçerli olmalı. */
+}
+
+.trainercontainer:hover .left-border,
+.trainercontainer:hover .right-border {
+  height: 80%; /* Sol ve sağ kenarlar daha uzun olacak */
+}
+
+.trainercontainer:hover .overlay {
+  opacity: 1; /* Hover ile overlay görünür hale gelir */
+  outline: 10px solid #355592; /* Kenarlık dışarıda görünür olacak */
+}
+
+/* Overlay stil */
+.overlay {
+  position: absolute;
+  bottom: 25px; /* Kutu altına yerleşmesini sağla */
+  left: 30px; /* Sol tarafa biraz boşluk bırak */
+  right: 5px; /* Sağ tarafa biraz boşluk bırak */
+  background: #355592; /* Arka plan rengi */
+  color: #f1f1f1; 
+  height: 100px; /* Overlay yüksekliği */
+  transition: opacity 0.5s ease, outline 0.5s ease; /* Opacity ve kenarlık geçişi */
+  opacity: 0; /* Başlangıçta görünmez */
+  font-size: 20px;
+  padding: 32px;
+  clip-path: polygon(0 9vh, 9vh 9vh, 9vh 0, calc(100% - 9vh) 0, calc(100% - 9vh) 9vh, 100% 9vh, 100% calc(100% - 9vh), calc(100% - 9vh) calc(100% - 9vh), calc(100% - 9vh) 100%, 9vh 100%, 9vh calc(100% - 9vh), 0 calc(100% - 9vh)); /* Kesik şekil */
+  text-align: center;
+  z-index: 1; /* Overlay'in üstte olması için */
+  outline: 10px solid transparent; /* Başlangıçta şeffaf kenarlık */
+}
+

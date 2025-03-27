@@ -159,3 +159,12 @@ function calculateProgress(bmi){
   return progress
 
 }
+
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbarstyle");
+  if (window.scrollY > 50) {  // 50px kaydırıldığında
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});

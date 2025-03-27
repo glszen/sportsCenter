@@ -5,13 +5,13 @@
   padding: 1em;
   box-shadow: 0 5px 5px #e1e1e1;
   font-family: Arial, Helvetica, sans-serif;
-  border-radius: 5%;
+  border-radius: 0%;
   display: block;
 }
 
 .product-card img {
   max-width: 100%;
-  border-radius: 5%;
+  border-radius: 0%;
 }
 
 .product-card h4 {
